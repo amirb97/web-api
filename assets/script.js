@@ -105,9 +105,12 @@ timer();
 //Function to display the your final score
 function finalResult(num){
     var highScore = document.getElementById('highscore');
-    var initials = document.getElementsByClassName('initials');
+    var initialsText = document.getElementsByClassName('initials');
+    var initialsInput = document.querySelector('#initials');
+    var submitButton = document.querySelector('#submit');
 
-    question.textContent = "All Done!"
+
+    question.textContent = "All Done!";
 
     highScore.textContent = "Your final score was: " + num;
 
@@ -116,7 +119,28 @@ function finalResult(num){
     ans3.style.display = "none";
     ans4.style.display = "none";
 
-    for(let i=0; i<initials.length; i++){
-        initials[i].style.display = "inline-block";
+    for(let i=0; i<initialsText.length; i++){
+        initialsText[i].style.display = "inline-block";
     }
+
+    submitButton.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var user = {
+            initials: initialsInput.value.trim(),
+            score: num
+        };
+
+        var oldHighScore = JSON.parse(localStorage.getItem('user-info'));
+
+        if(oldHighScore === null){
+            localStorage.setItem("user-info", JSON.stringify(user));
+        } else {
+            if(oldHighScore.score < num){
+                localStorage.setItem("user-info", JSON.stringify(user));
+            } else {
+                localStorage.setItem("user-info", JSON.stringify(oldHighScore));
+            }
+        }
+    })
 };

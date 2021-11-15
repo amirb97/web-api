@@ -57,3 +57,38 @@
 .submit:hover {
     background-color: rgb(178, 10, 255);
 }
+
+.scores {
+    display: inline-block;
+    background: rgba(125, 60, 155, 0.5);
+    width: 500px;
+}
+
+.scores li {
+    display: block;
+    padding: 20px;
+}
+
+.options {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.btn2 {
+    border: none;
+    background-color: rgb(122, 8, 175);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: rgb(178, 10, 255);
+}
