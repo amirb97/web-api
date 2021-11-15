@@ -34,3 +34,26 @@
     border-radius: 10px;
     width: 400px;
 }
+
+.initials {
+    display: none;
+    font-size: 30px;
+}
+
+.submit {
+    border: none;
+    background-color: rgb(122, 8, 175);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgb(178, 10, 255);
+}
