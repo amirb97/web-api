@@ -62,6 +62,10 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+    background-color: rgb(178, 10, 255);
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

@@ -1,0 +1,36 @@
+.wrapper {
+    padding: 20px;
+}
+
+.btn {
+    display: block;
+}
+
+.header {
+    font-size: 30px;
+    right: 0;
+    margin: 30px;
+}
+
+.highScores {
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+
+.result {
+    text-align: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+}
+
+.quiz-answers {
+    display: block;
+}
+
+.btn {
+    text-align: left;
+    border-radius: 10px;
+    width: 400px;
+}
